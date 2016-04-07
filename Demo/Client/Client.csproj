@@ -217,7 +217,24 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Customer\Customer.csproj">
+      <Project>{ede1e4ee-457b-4f5a-ad8b-f14fc3e04111}</Project>
+      <Name>Customer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Order\Order.csproj">
+      <Project>{b4ede37c-79f9-4f11-a213-29cf97d82fda}</Project>
+      <Name>Order</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payment\Payment.csproj">
+      <Project>{96d00c55-b7df-4540-8d2a-0591ee90a6bf}</Project>
+      <Name>Payment</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Product\Product.csproj">
+      <Project>{2ef1f702-e115-469f-a662-7c39df6d3cfc}</Project>
+      <Name>Product</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />

@@ -4,6 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Client.Models;
+using CustomerNS;
+using ProductNS;
+using Order;
 
 namespace Client.Controllers
 {
@@ -12,6 +16,8 @@ namespace Client.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            Models.ESBMediator objMediator = new ESBMediator();
+            objMediator.Commit();
             return new string[] { "value1", "value2" };
         }
 
