@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace Client.Models
 {
-    public class ESBMediator
+    public class GetDataFromRepositories
     {
+         
+    }
+    public class ESBMediator : IUOW
+    {
+        public Guid Commit()
+        {
+            throw new NotImplementedException();
+        }
 
+        public Guid ROllBack()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
