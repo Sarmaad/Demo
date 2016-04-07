@@ -8,7 +8,7 @@ namespace CustomerNS
 {
     public class Customer
     {
-        public int CustomerID { get; set; }
-        public string CustomerName { get; set; } 
+        public int CustomerID { get; private set; }
+        public string CustomerName { get; private set; } 
     }
 }

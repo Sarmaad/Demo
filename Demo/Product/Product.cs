@@ -8,12 +8,17 @@ namespace ProductNS
 {
     public class Product
     {
-        public int ProductID { get; set; }
-
-        public string ProductName { get; set; }
-
+        public int ProductID { get; private set; }
+        public string ProductName { get; private set; }
         public double Price { get; private set; }
+        public int Quantity { get; private set; }           // 
 
-        public int Quantity { get; set; }
+        public Product(int productId, string productName, double price, int qty)
+        {
+            ProductID = productId;
+            ProductName = productName;
+            Price = price;
+            Quantity = qty;
+        }
     }
 }
