@@ -10,10 +10,12 @@ namespace ProductNS
     {
         public int ProductID { get; private set; }
         public string ProductName { get; private set; }
-        public double Price { get; private set; }
-        public int Quantity { get; private set; }           // 
+        public decimal Price { get; private set; }
+        public int Quantity { get; private set; }           
+        public bool IsActive { get; set; }
 
-        public Product(int productId, string productName, double price, int qty)
+
+        public Product(int productId, string productName, decimal price, int qty)
         {
             ProductID = productId;
             ProductName = productName;
